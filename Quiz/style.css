@@ -1,0 +1,231 @@
+.flex-container1 {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 90vw;
+    height: 100vh;
+    align-items: center;
+    gap: 20px;
+}
+
+body {
+    background-color: #295F98;
+}
+
+.afacad-flux {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
+.top-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 80%;
+    border: 2px solid darkslategrey;
+    gap: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.middle-row {
+    border: 2px solid darkslategrey;
+    height: auto;
+    width: 80%;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.slide-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.btn {
+    font-family: "Afacad Flux", sans-serif;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.slide {
+    border-color: darkslategrey;
+    color: darkslategrey;
+}
+
+.slide:hover {
+    background-color: darkslategrey;
+    color: white;
+}
+
+.active {
+    background-color: darkslategrey !important;
+    color: white;
+}
+
+#next {
+    font-family: "Afacad Flux", sans-serif;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid darkslategrey;
+    cursor: pointer;
+    height: 30px;
+    width: 70px;
+    color: darkslategrey;
+    
+}
+
+#next:hover:not([disabled]){
+    background-color: #72BF78;
+    color: white;
+    border: 0;
+    font-weight: bold;    
+}
+
+#next:disabled{
+    cursor: no-drop;
+}
+
+#previous {
+    font-family: "Afacad Flux", sans-serif;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid darkslategrey;
+    cursor: pointer;
+    height: 30px;
+    width: 70px;
+    color: darkslategrey;
+}
+
+#previous:hover{
+    background-color: #C40C0C;
+    color: white;
+    border: 0;
+    font-weight: bold;    
+}
+
+.question-row {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#question{
+    font-family: "Afacad Flux", sans-serif;
+}
+
+#answer-buttons-row {
+    height: 300px;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.answer-buttons {
+    font-family: "Afacad Flux", sans-serif;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid darkslategrey;
+    cursor: pointer;
+}
+
+.answer-buttons:hover {
+    background-color: #295F98;
+}
+
+.correct {
+    background-color: #72BF78;
+}
+
+.incorrect {
+    background-color: #C40C0C;
+}
+
+#show {
+    font-family: "Afacad Flux", sans-serif;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid darkslategrey;
+    cursor: pointer;
+    height: fit-content;
+    width: 70px;
+    color: darkslategrey;
+    
+}
+
+#show:hover:not([disabled]){
+    background-color: #72BF78;
+    color: white;
+    border: 0;
+    font-weight: bold;    
+}
+
+.hide {
+    display: none !important;
+}
+
+.upozorenje{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: red;
+    border: 2px solid darkslategrey;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    font-family: "Afacad Flux", sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.score {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color:  green;
+    border: 2px solid darkslategrey;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    font-family: "Afacad Flux", sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .btn {
+        padding: 10px;
+    }
+    .top-row {
+        width: 100%;
+    }
+    .flex-container1 {
+        width: 100%;
+    }
+}
